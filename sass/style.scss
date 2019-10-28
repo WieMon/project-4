@@ -1,0 +1,147 @@
+/*Variables*/
+$font-one: "Dancing Script", cursive;
+$font-two: "Zilla Slab", serif;
+$color-one: #191b1b;
+$color-two: #808e9b;
+$color-three: #fff;
+$color-four: #feca57;
+$color-five: #ecf0f1;
+/*Global*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.container {
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: $color-one;
+    font-family: $font-two;
+    margin-bottom: 0; 
+}
+.subtitle, h4 {
+    color: $color-two;
+    font-family: $font-one;
+    margin-top: -5px;
+    font-weight: 400;
+}
+.intro, .services, .portfolio {
+    padding: 96px 0;
+}
+.page-footer {
+    padding: 24px;
+   
+}
+.row-outer {
+    text-align: center;
+}
+.row-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+/* Navigation and Intro*/
+ .nav-intro {
+    background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center center;
+    background-size: cover; 
+}
+/*Navigation*/
+.navigation {
+    padding: 12px 0;
+}
+.btn-one {
+    text-decoration: none;
+    color: $color-four;
+    font-family: $font-one;
+    font-size: 20px;
+}
+.nav-btn {
+    list-style-type: none;
+}
+.btn-two {
+    display: inline-block;
+}
+.btn-two a {
+    text-decoration: none;
+    color: $color-three;
+    margin: 0 24px 0 0 ;
+}
+
+/*Intro*/
+.btn-three {
+    color: $color-three;
+    background: $color-four;
+    border-radius: 5px;
+    padding: 16px;
+}
+.page-title {
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: 0;
+    color: $color-three;
+}
+.page-subtitle {
+    font-size: 36px;
+    color: $color-three;
+    font-family: $font-one;
+    margin: 48px 0 0 0;
+}
+/*Services*/
+.services i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 60%;
+    color: $color-four;
+    font-size: 30px;
+    background: transparent;
+    border: 3px solid $color-four;
+}
+.services p {
+    color: $color-two;
+    font-family: $font-two;
+}
+/*Portfolio*/
+.portfolio {
+    background: $color-five;
+}
+.portfolio-img {
+    height: 80%;   
+}
+.portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Footer*/
+.page-footer p {
+    color: $color-two;
+}
+.footer-icon {
+    list-style-type: none;
+    background: $color-one;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+.footer-icon a {
+    color: $color-three;
+}
