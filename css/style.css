@@ -95,6 +95,7 @@ h1, h2, h3 {
   background: #feca57;
   border-radius: 5px;
   padding: 16px;
+  line-height: 24px;
 }
 
 .page-title {
@@ -115,12 +116,13 @@ h1, h2, h3 {
 .services i {
   width: 60px;
   height: 60px;
-  line-height: 60px;
+  line-height: 50px;
   border-radius: 60%;
   color: #feca57;
   font-size: 30px;
   background: transparent;
   border: 3px solid #feca57;
+  text-align: center;
 }
 
 .services p {
@@ -144,24 +146,50 @@ h1, h2, h3 {
      object-fit: cover;
 }
 
+.portfolio-text {
+  background: #fff;
+}
+
+.portfolio-text h3 {
+  margin-top: 0;
+}
+
 /*Footer*/
 .page-footer p {
   color: #808e9b;
 }
 
 .footer-icon {
+  display: inline-block;
+}
+
+.footer-icon i {
   list-style-type: none;
   background: #191b1b;
+  color: #fff;
   font-size: 20px;
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
   text-align: center;
-  display: inline-block;
 }
 
-.footer-icon a {
-  color: #fff;
+/*Media*/
+@media (max-width: 320px) {
+  body {
+    min-width: 108%;
+  }
+  .intro {
+    padding: 0 0 36px 0;
+  }
+  .page-title {
+    font-size: 45px;
+    padding-bottom: 36px;
+    margin-bottom: 24px;
+  }
+  .portfolio-inner {
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
